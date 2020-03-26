@@ -1,9 +1,9 @@
 'use strict'
 
-var detective = require('detective')
-var patch = require('patch-text')
-var hasRequire = require('has-require')
-var extend = require('xtend')
+var detective = require("./pre-bundled/node_modules/detective")
+var patch = require("./pre-bundled/node_modules/patch-text")
+var hasRequire = require("./pre-bundled/node_modules/has-require")
+var extend = require("./pre-bundled/node_modules/xtend")
 
 module.exports = function replaceRequires (code, replacements) {
   var checker = new hasRequire.Checker(code)
